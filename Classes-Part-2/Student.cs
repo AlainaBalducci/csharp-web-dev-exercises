@@ -56,7 +56,7 @@ namespace Classes_Part_2
             {
                 return "Senior";
             }
-            // Determine the grade level of the student based on NumberOfCredits
+            // Determine the grade level of the student based on credits
 
         }
         public override string ToString()
@@ -65,7 +65,7 @@ namespace Classes_Part_2
         }
         // TODO: Add your custom 'ToString' method here. Make sure it returns a well-formatted string rather
         //  than just the class fields.
-        public override bool Equals(object? obj)
+        public override bool Equals(object obj)
         {
             if (obj == this)
             {
@@ -81,6 +81,11 @@ namespace Classes_Part_2
             }
             Student student = obj as Student;
             return student.StudentId == StudentId;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(StudentId);
         }
         // TODO: Add your custom 'Equals' method here. Consider which fields should match in order to call two
         //  Student objects equal.
