@@ -17,13 +17,4 @@ using System.Runtime.Serialization.Formatters;
     Console.WriteLine($"Name: {newStudent.Name}\nID:{newStudent.StudentId}\nCredits:{newStudent.NumberOfCredits}\nGPA:{newStudent.Gpa}");
     
 
-    //foreach (string student in newStudent)
-    //{
-    //    Console.WriteLine(student);
-    //}
-
-    //    for (int i = 0; i < newStudent.ToString().Length; i++)
-    //    {
-    //        Console.WriteLine(Student.newStudent);
-    //    }
-   
+    
